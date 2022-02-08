@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerMypage">
+
+    <Button
+        android:id="@+id/manager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="#99CAEDA2"
+        android:gravity="left"
+        android:text="마이페이지"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#CCCCCC"
+        android:text="사용자 확인"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@id/manager"
+        app:layout_constraintStart_toStartOf="@id/manager"
+        app:layout_constraintTop_toBottomOf="@id/manager" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#CCCCCC"
+        android:text="로그아웃"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_check"
+        app:layout_constraintStart_toStartOf="@id/btn_check"
+        app:layout_constraintTop_toBottomOf="@id/btn_check" />
+</androidx.constraintlayout.widget.ConstraintLayout>
